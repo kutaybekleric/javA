@@ -1,0 +1,20 @@
+Field Service Application:
+
+User Entity:
+Permission Entity:
+
+Customer Entity:
+Customer Lines: Work,Customer
+
+Location Entity: has Location, QR, Name, Type, Customer
+LocationType Entity: has Name
+
+Work Entity: has Name, WorkType,
+WorkType Entity: has Name
+WorkLog: User, Work, Status, DT, Notes,User Position
+
+Status Entity: has Name, WorkType
+Workflow Entity: has WorkType, source Status, target Status, condition script, function script
+
+Script Entity: has Name, Script, (template scripts)
+
